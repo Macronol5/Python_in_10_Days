@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student Data</title>
+    <meta charset="UTF-8" />
+    <style>
+        h1 {
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Student Data</h1>
+    <form method="POST" action="/add_student">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="marks">Marks:</label>
+        <input type="number" id="marks" name="marks" required><br><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

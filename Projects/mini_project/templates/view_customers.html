@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Customers</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer's List</h1>
+    <ul>
+        {% for account in accounts %}
+        <li>Account Number: {{ account.get_account_number() }}</li>
+        <li>Customer Name: {{ account.get_customer_name() }}</li>
+        <li>Balance: ${{ account.get_balance() }}</li>
+        <br>
+        {% endfor %}
+    </ul>
+    <a href="/create_account">Create Account</a>
+    <a href="/">Home</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form action="/create_account" method="post">
+        <label>Account Number:</label>
+        <input type="text" name="account_number"><br>
+        <label>Customer Name:</label>
+        <input type="text" name="customer_name"><br>
+        <label>Balance:</label>
+        <input type="text" name="balance"><br>
+        <input type="submit" value="Create">
+    </form>
+</body>
+</html>

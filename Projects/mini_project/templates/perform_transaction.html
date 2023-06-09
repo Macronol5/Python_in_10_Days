@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perform Transaction</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perform Transaction</h1>
+    <form action="/perform_transaction" method="post">
+        <label>Account Number:</label>
+        <input type="text" name="account_number"><br>
+        <label>Amount:</label>
+        <input type="text" name="amount"><br>
+        <label>Transaction Type:</label>
+        <select name="transaction_type">
+            <option value="Deposit">Deposit</option>
+            <option value="Withdrawal">Withdrawal</option>
+        </select><br>
+        <input type="submit" value="Perform">
+    </form>
+</body>
+</html>
